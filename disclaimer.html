@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luverz: Rules and Liability</title>
     <style>
-        /* Theme Matching index.html */
+        /* Base Styles */
         body {
             font-family: 'Montserrat', sans-serif;
             background-color: #17202A;
@@ -23,7 +23,7 @@
             top: 0;
             left: 0;
             width: 100%;
-            background-color: #3C096C; /* Deep Purple */
+            background-color: #3C096C; 
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
             z-index: 999;
             padding: 10px 20px;
@@ -34,7 +34,7 @@
 
         .nav-logo {
             font-size: 1.5em;
-            color: #FFC300; /* Gold */
+            color: #FFC300; 
             font-weight: 700;
             text-decoration: none;
         }
@@ -49,8 +49,14 @@
         }
 
         .nav-links a:hover {
-            color: #FF577F; /* Pink accent on hover */
+            color: #FF577F; 
             border-bottom: 2px solid #FF577F;
+        }
+
+        .nav-links .active {
+            color: #FF577F;
+            border-bottom: 2px solid #FF577F;
+            font-weight: 700;
         }
 
         /* Header (page specific) */
@@ -172,7 +178,7 @@
         <a href="index.html" class="nav-logo">Luverz</a>
         <div class="nav-links">
             <a href="index.html">Home</a>
-            <a href="disclaimer.html">Rules</a>
+            <a href="disclaimer.html" class="active">Rules</a>
             <a href="dorm.html">Dormitory</a>
         </div>
     </nav>
