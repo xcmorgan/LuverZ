@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luverz: Welcome Home</title>
     <style>
-        /* Modern, Engaging Theme */
+        /* Base Styles */
         body {
             font-family: 'Montserrat', sans-serif;
             background-color: #17202A;
@@ -16,7 +16,7 @@
             flex-direction: column;
             align-items: center;
             min-height: 100vh; 
-            padding-top: 60px; /* Space for the fixed navigation bar */
+            padding-top: 60px;
         }
         
         /* --- Navigation Bar Styling --- */
@@ -25,7 +25,7 @@
             top: 0;
             left: 0;
             width: 100%;
-            background-color: #3C096C; /* Deep Purple */
+            background-color: #3C096C;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
             z-index: 999;
             padding: 10px 20px;
@@ -36,7 +36,7 @@
 
         .nav-logo {
             font-size: 1.5em;
-            color: #FFC300; /* Gold */
+            color: #FFC300;
             font-weight: 700;
             text-decoration: none;
         }
@@ -51,14 +51,20 @@
         }
 
         .nav-links a:hover {
-            color: #FF577F; /* Pink accent on hover */
+            color: #FF577F;
             border-bottom: 2px solid #FF577F;
+        }
+
+        .nav-links .active {
+            color: #FF577F;
+            border-bottom: 2px solid #FF577F;
+            font-weight: 700;
         }
         
         /* Header and Title (main content) */
         .main-title {
             margin-bottom: 40px;
-            margin-top: 10vh; /* Center content vertically below the nav */
+            margin-top: 10vh;
         }
 
         h1 {
@@ -101,7 +107,6 @@
             text-transform: uppercase;
         }
 
-        /* Primary Button: Enter */
         #enter-button {
             background-color: #2ECC71; 
         }
@@ -112,7 +117,6 @@
             box-shadow: 0 10px 20px rgba(46, 204, 113, 0.5);
         }
 
-        /* Secondary Button: Disclaimer */
         #disclaimer-button {
             background-color: #FF577F; 
             color: white;
@@ -157,7 +161,7 @@
     <nav class="navbar">
         <a href="index.html" class="nav-logo">Luverz</a>
         <div class="nav-links">
-            <a href="index.html">Home</a>
+            <a href="index.html" class="active">Home</a>
             <a href="disclaimer.html">Rules</a>
             <a href="dorm.html">Dormitory</a>
         </div>
@@ -181,6 +185,8 @@
     
     <footer>
         &copy; 2025 StatWebZ | Private Access Only
+        <br>
+        **Note:** This is a **static website** and does not collect or store any user information.
     </footer>
 
 </body>
